@@ -4,9 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Training_centers extends Model
+class Training_center extends Model
 {
-    public function teachers()
+    public function teacher()
     {
         return $this->hasMany('App\Models\Teacher');
     }
@@ -15,3 +15,4 @@ class Training_centers extends Model
         return $this->hasMany('App\Models\Course');
     }
 }
+
